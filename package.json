@@ -1,0 +1,8 @@
+{
+  "name": "vertumotors",
+  "version": "1.0.0",
+  "scripts": {"sass": "sass --watch assets/sass/main.scss:assets/css/index.css"},
+  "dependencies": {
+    "sass": "^1.62.1"
+  }
+}
