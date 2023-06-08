@@ -1,0 +1,44 @@
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .card {
+        border-radius: 1.5rem;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        width: 31%;
+        margin: 1%;
+
+        @media screen and (max-width: 1200px) {
+            width: 48%;
+            margin-bottom: 1rem;
+        }
+    
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
+                
+        .card-image {
+            width: 100%;
+        }
+
+        .card-content {
+            padding: 1rem 2rem;
+
+            .card-title {
+                margin: 1rem 0;
+            }
+
+            .card-subtitle {
+                font-weight: 500;
+                font-size: 1.25rem;
+            }
+
+            li {
+                line-height: 1.75em;
+                font-weight: 500;
+            }
+        }
+    }
+}
+

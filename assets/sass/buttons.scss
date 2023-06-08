@@ -1,0 +1,20 @@
+.btn {
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    outline: none;
+
+    &.btn-primary {
+        background-color: $button-primary;
+        border: solid 2px $button-primary;
+        color: #013a3c;
+
+        &:hover {
+            background-color: transparent;
+            color: $button-primary;
+        }
+    }
+}

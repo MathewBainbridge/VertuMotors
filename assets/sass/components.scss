@@ -1,0 +1,151 @@
+.hero-banner {
+    width: 100%;
+    position: relative;
+
+      .hero-banner-image {
+        width: 100%;
+        background-image: url('../images/Hero-banner-desktop.jpg');
+        background-position: center;
+        background-size: cover;
+        min-height: 32rem;
+        @media only screen and (max-width: 768px) {
+            min-height: 16rem;
+            background-image: url('../images/Hero-banner-mobile.jpg');
+        }
+      }
+
+      .hero-banner-content {
+        text-align: left;
+        max-width: 25%;
+        color: white;
+        padding: 5rem 0;
+        position: absolute;
+        top: 0;
+        margin: 0 10%;
+
+        @media only screen and (max-width: 1200px) {
+            max-width: 50%;
+        }
+
+        @media only screen and (max-width: 992px) {
+            padding: 5rem 0;
+            max-width: 75%;
+        }
+        @media only screen and (max-width: 768px) {
+            background: $primary;
+            text-align: center;
+            margin: 0;
+            position: unset;
+            max-width: 100%;
+            padding: 2rem 1rem;
+
+            .btn {
+                width: 100%;
+            }
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            @media only screen and (max-width: 768px) {
+                font-size: .9rem;
+
+            }
+        }
+
+        .hero-banner-title {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+
+            @media only screen and (max-width: 768px) {
+                margin-top: 0;
+
+            }
+        }
+      }
+}
+
+.text-grid {
+    .text-grid-container {
+        padding: 4rem 0;
+        display: flex;
+        justify-content: space-between;
+
+        @media screen and (max-width: 768px) {
+            flex-direction: column !important;
+            margin: 0;
+            padding-bottom: 3rem;
+            padding-top: 0;
+        }
+
+        .text-grid-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 40%;
+
+            @media screen and (max-width: 768px) {
+                padding-right: 0;
+                width: initial;
+                margin: 0 10%;
+
+                button {
+                    width: 100% !important;
+                }
+            }
+
+            >p {
+                margin-top: 1rem;
+                margin-bottom: 1rem; 
+            }
+                
+            button {
+                width: fit-content;
+            }
+
+            h3 {
+                margin-top: 0;
+                margin-bottom: 0.5rem;
+            }
+
+            .text-grid-sub-container {
+                display: flex;
+                align-items: center;
+                margin: 1rem 0;
+
+                .text-grid-sub-content {
+                    display: flex;
+                    flex-direction: column;
+
+                    p {
+                        margin-top: 0;
+                        margin-bottom: 0.5rem;
+                    }
+                }
+            }
+        }
+
+        .text-grid-image {
+            width: 50%;
+            border-radius: 1rem;
+
+            @media screen and (max-width: 768px) {
+                width: 100%;
+                border-radius: 0;
+                margin-bottom: 2rem;
+            }
+                
+        }
+    }
+
+    &.bg-primary {
+        color: white;
+    }
+
+    &--left {
+        .text-grid-container {
+            flex-direction: row-reverse;
+        }
+    }
+
+}
