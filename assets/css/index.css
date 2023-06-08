@@ -43,7 +43,7 @@
   font-size: 0.85rem;
   padding: 1.5rem 1rem;
   position: relative;
-  cursor: default;
+  cursor: pointer;
 }
 .navbar .navbar-links .navbar-links-list .navbar-link > a {
   padding: 1.5rem 0;
